@@ -4,3 +4,9 @@
   height: 70px;
   line-height: 70px;
 }
+
+#jumbotron {
+  margin-top: 70px;
+  background-color: #1abc9c;
+  color: #fff;
+}
