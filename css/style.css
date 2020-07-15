@@ -6,7 +6,15 @@
 }
 
 #jumbotron {
+  position: relative;
+  height: 400px;
   margin-top: 70px;
   background-color: #1abc9c;
   color: #fff;
+}
+#jumbotron > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
