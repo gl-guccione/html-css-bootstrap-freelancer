@@ -5,7 +5,7 @@ body {
   font-family: 'Lato', sans-serif;
 }
 section {
-  padding: 60px 0;
+  padding: 80px 0;
 }
 .wrapper {
   width: 90%;
@@ -56,6 +56,7 @@ h1 {
 }
 h1,
 h2,
+h3,
 .bold {
   font-weight: bold;
 }
@@ -149,4 +150,43 @@ CONTENT
 }
 #about button:hover {
   background-color: #fff;
+}
+
+/* Footer */
+#footer-top {
+  padding: 80px 0;
+}
+#footer-top h3 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+#footer-top p {
+  font-size: 22px;
+}
+#footer-top > .container > .row > div {
+  margin-bottom: 30px;
+}
+#footer-top .logo_footer {
+  display: inline-block;
+  font-size: 18px;
+  padding: 10px;
+  border: 2px solid #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 6px;
+}
+#footer-top .logo_footer:hover {
+  color: #2c3e50;
+  background-color: #fff;
+  cursor: pointer;
+}
+#footer-top > .container > .row > div:last-child a {
+  color: #1abc9c;
+}
+#footer-top > .container > .row > div:last-child a:hover {
+  color: #117964;
+}
+#watermark {
+  padding: 30px 0;
 }
