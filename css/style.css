@@ -4,6 +4,14 @@ GENERAL
 body {
   font-family: 'Lato', sans-serif;
 }
+section {
+  padding: 60px 0;
+}
+.wrapper {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+}
 
 .r_margin {
   margin: 0;
@@ -43,19 +51,16 @@ body {
 /*
 TYPO
  */
+h1 {
+  font-size: 26px;
+}
 h1,
 h2,
-p.bold,
 .bold {
   font-weight: bold;
 }
 section > h2:first-child {
   font-size: 28px;
-}
-@media screen and (min-width: 768px) {
-  section > h2:first-child {
-    font-size: 40px;
-  }
 }
 
 .text-white {
@@ -63,6 +68,15 @@ section > h2:first-child {
 }
 .text_darkblue {
   color: #2c3e50;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 60px;
+  }
+  section > h2:first-child {
+    font-size: 40px;
+  }
 }
 
 /*
@@ -74,6 +88,7 @@ CONTENT
   line-height: 90px;
 }
 #header-top h2 {
+  font-size: 22px;
   line-height: 90px;
   margin: 0;
 }
@@ -84,6 +99,11 @@ CONTENT
 }
 #header-top a:hover {
   color: #1abc9c;
+}
+@media screen and (min-width: 768px) {
+  #header-top h2 {
+    font-size: 30px;
+  }
 }
 
 #jumbotron {
@@ -98,6 +118,9 @@ CONTENT
   width: 90%;
   max-width: 260px;
 }
+#jumbotron p {
+  font-size: 20px;
+}
 
 /* Portfolio */
 
@@ -108,18 +131,22 @@ CONTENT
   width: 100%;
   border-radius: 20px;
 }
-
-
-/*
-RESPONSIVE
-*/
-
-
 @media screen and (max-width: 767px) {
-  h1 {
-    font-size: 45px;
+  #portfolio .port-item > img {
+    max-width: 300px;
   }
-  #header-top h2 {
-    font-size: 22px;
-  }
+}
+
+/* About */
+
+#about p {
+  font-size: 20px;
+}
+#about button {
+  font-size: 20px;
+  padding: 15px 25px;
+  border: 2px solid #fff;
+}
+#about button:hover {
+  background-color: #fff;
 }
