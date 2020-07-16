@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap theme</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -11,31 +12,38 @@
     <!-- header -->
     <header>
       <!-- header-top -->
-      <nav id="header-top" class="navbar-fixed-top text-white bg_darkblue">
+      <nav id="header-top" class="navbar-fixed-top text-white text-uppercase bg_darkblue">
         <div class="container">
           <div class="row">
-            <div class="col-xs-6">
-              <h2 class="text-uppercase">logo</h2>
+            <div class="col-xs-10 col-sm-6">
+              <h2 class="">Start Bootstrap</h2>
             </div>
             <div class="col-sm-6 hidden-xs text-right">
-              <ul class="list-inline">
-                <li><a class="text-uppercase" href="#">link</a></li>
-                <li><a class="text-uppercase" href="#">link</a></li>
-                <li><a class="text-uppercase" href="#">link</a></li>
+              <ul class="list-inline r_margin">
+                <li><a class="" href="#portfolio">portfolio</a></li>
+                <li><a class="" href="#about">about</a></li>
+                <li><a class="" href="#contact">contact</a></li>
               </ul>
             </div>
-            <div class="col-xs-6 visible-xs text-right">
-              <div class="glyphicon glyphicon-menu-hamburger"></div>
+            <div class="col-xs-2 visible-xs text-right">
+              <a class="glyphicon glyphicon-menu-hamburger btn" href="#"></a>
             </div>
           </div>
         </div>
       </nav>
       <!-- /header-top -->
       <!-- jumbotron -->
-      <div id="jumbotron" class="jumbotron text-white bg_green">
-        <div>
-          <h1 class="text-uppercase">Lorem ipsum dolor sit amet, </h1>
+      <div id="jumbotron" class="jumbotron text-white text-center bg_green">
+        <div class="jumbotron-text">
+          <img src="img/avatar.svg" alt="avatar">
+          <h1 class="text-uppercase">start bootstrap</h1>
         </div>
+        <div class="star_text text-white">
+          <hr class="bg_white">
+          <span class="glyphicon glyphicon-star"></span>
+          <hr class="bg_white">
+        </div>
+        <p class="bold">Graphic Artist - Web Designer - Illustrator</p>
       </div>
       <!-- /jumbotron -->
     </header>
@@ -43,8 +51,13 @@
     <!-- main -->
     <main>
       <!-- portfolio -->
-      <section id="portfolio" class="text-center">
-        <h2 class="text-uppercase">lorem</h2>
+      <section id="portfolio" class="text-center text_darkblue">
+        <h2 class="text-uppercase">portfolio</h2>
+        <div class="star_text text-darkblue">
+          <hr class="bg_darkblue">
+          <span class="glyphicon glyphicon-star"></span>
+          <hr class="bg_darkblue">
+        </div>
         <div class="container">
           <div class="row">
             <!-- item -->
@@ -97,17 +110,17 @@
         <div class="container">
           <div class="row">
             <!-- location -->
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-md-4">
               <p>acio Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <!-- /location -->
             <!-- web -->
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-md-4">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <!-- /web -->
             <!-- about -->
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-md-4">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <!-- /about -->
