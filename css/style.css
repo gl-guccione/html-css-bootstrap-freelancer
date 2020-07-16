@@ -49,6 +49,14 @@ p.bold,
 .bold {
   font-weight: bold;
 }
+section > h2:first-child {
+  font-size: 28px;
+}
+@media screen and (min-width: 768px) {
+  section > h2:first-child {
+    font-size: 40px;
+  }
+}
 
 .text-white {
   color: #fff;
@@ -57,10 +65,11 @@ p.bold,
   color: #2c3e50;
 }
 
-
 /*
 CONTENT
 */
+
+/* Header */
 #header-top {
   line-height: 90px;
 }
@@ -90,16 +99,21 @@ CONTENT
   max-width: 260px;
 }
 
+/* Portfolio */
 
 #portfolio .port-item {
-  background-color: red;
-  border-radius: 5px;
-  height: 200px;
+  margin: 15px 0;
 }
+#portfolio .port-item > img {
+  width: 100%;
+  border-radius: 20px;
+}
+
 
 /*
 RESPONSIVE
 */
+
 
 @media screen and (max-width: 767px) {
   h1 {
