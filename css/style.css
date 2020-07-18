@@ -30,7 +30,7 @@ section {
   background-color: #2c3e50;
 }
 
-.max-width {
+.max_width {
   width: 100%;
 }
 
@@ -69,7 +69,7 @@ section > h2:first-child {
   font-size: 28px;
 }
 
-.text-white {
+.text_white {
   color: #fff;
 }
 .text_darkblue {
@@ -130,26 +130,25 @@ CONTENT
 
 /* Portfolio */
 
-#portfolio .port-item {
+#portfolio .port_item {
   position: relative;
   margin: 15px 0;
-}
-#portfolio .port-item > img {
-  width: 100%;
   border-radius: 20px;
+  overflow: hidden;
+}
+#portfolio .port_item > img {
+  width: 100%;
 }
 #portfolio .port_item_hover {
   display: none;
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translate(-50%, 0);
+  left: 0;
   color: #fff;
   font-size: 70px;
   background-color: rgba(26, 188, 156, 0.5);
   width: 100%;
   height: 100%;
-  border-radius: 20px;
 }
 #portfolio .port_item_hover > i {
   position: absolute;
@@ -157,18 +156,16 @@ CONTENT
   left: 50%;
   transform: translate(-50%, -50%);
 }
-#portfolio .port-item:hover .port_item_hover {
+ #portfolio .port_item:hover .port_item_hover {
   cursor: pointer;
   display: block;
 }
 
 @media screen and (max-width: 767px) {
-  #portfolio .port-item > img {
+  #portfolio .port_item {
+    margin-left: auto;
+    margin-right: auto;
     max-width: 300px;
-  }
-  #portfolio .port_item_hover {
-    max-width: 300px;
-    margin: 0 auto;
   }
 }
 
@@ -188,6 +185,10 @@ CONTENT
 }
 
 /* contact */
+#contact {
+  position: relative;
+}
+
 #contact form > div > input,
 #contact form > div > textarea {
   font-size: 24px;
@@ -206,6 +207,13 @@ CONTENT
 }
 #contact button:hover {
   background-color: #159a80;
+}
+
+#contact .success {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 
