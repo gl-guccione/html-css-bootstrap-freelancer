@@ -44,12 +44,14 @@ section {
   display: inline-block;
 }
 .star_text > hr {
+  position: relative;
+  bottom: 10px;
+
   width: 30%;
   max-width: 110px;
   height: 3px;
   margin: 0 10px;
-  position: relative;
-  bottom: 10px;
+
   border-radius: 3px;
 }
 .star_text > span {
@@ -101,13 +103,15 @@ CONTENT
   line-height: 90px;
 }
 #header-top h2 {
+  margin: 0;
+
   font-size: 22px;
   line-height: 90px;
-  margin: 0;
 }
 
 #header-top a {
   color: #fff;
+
   font-weight: bold;
 }
 #header-top a:hover {
@@ -121,10 +125,12 @@ CONTENT
   display: block;
 }
 #header-top .menu_xs {
-  display: none;
   position: absolute;
-  right: 0;
   top: 70px;
+  right: 0;
+
+  display: none;
+
   width: 250px;
 }
 @media screen and (min-width: 768px) {
@@ -153,40 +159,49 @@ CONTENT
 
 #portfolio .port_item {
   position: relative;
-  margin: 15px 0;
-  border-radius: 20px;
+
   overflow: hidden;
+
+  margin: 15px 0;
+
+  border-radius: 20px;
 }
 #portfolio .port_item > img {
   width: 100%;
 }
 #portfolio .port_item_hover {
-  display: none;
   position: absolute;
   top: 0;
   left: 0;
-  color: #fff;
-  font-size: 70px;
-  background-color: rgba(26, 188, 156, 0.5);
+
+  display: none;
+
   width: 100%;
   height: 100%;
+
+  color: #fff;
+  background-color: rgba(26, 188, 156, 0.5);
+
+  font-size: 70px;
 }
 #portfolio .port_item_hover > i {
   position: absolute;
   top: 50%;
   left: 50%;
+
   transform: translate(-50%, -50%);
 }
  #portfolio .port_item:hover .port_item_hover {
-  cursor: pointer;
   display: block;
+
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
   #portfolio .port_item {
-    margin-left: auto;
-    margin-right: auto;
     max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -196,10 +211,12 @@ CONTENT
   font-size: 20px;
 }
 #about button {
-  font-size: 20px;
-  padding: 15px 25px;
-  border: 2px solid #fff;
   margin-top: 30px;
+  padding: 15px 25px;
+
+  border: 2px solid #fff;
+
+  font-size: 20px;
 }
 #about button:hover {
   background-color: #fff;
@@ -212,14 +229,16 @@ CONTENT
 
 #contact form > div > input,
 #contact form > div > textarea {
-  font-size: 24px;
   border: none;
   box-shadow: none;
+
+  font-size: 24px;
 }
 
 #contact .form_line {
-  border-bottom: 1px solid #e9ecef;
   padding: 0 0 30px;
+
+  border-bottom: 1px solid #e9ecef;
 }
 
 #contact button {
@@ -234,10 +253,14 @@ CONTENT
   position: absolute;
   bottom: 30%;
   left: 50%;
-  transform: translate(-50%, 0);
+
   padding: 15px 30px;
-  font-size: 20px;
+
+  transform: translate(-50%, 0);
+
   border-radius: 20px;
+
+  font-size: 20px;
 }
 
 
@@ -246,8 +269,9 @@ CONTENT
   padding: 80px 0;
 }
 #footer-top h3 {
-  font-size: 28px;
   margin-bottom: 40px;
+
+  font-size: 28px;
 }
 #footer-top p {
   font-size: 22px;
@@ -257,18 +281,22 @@ CONTENT
 }
 #footer-top .logo_footer {
   display: inline-block;
-  font-size: 18px;
-  padding: 10px;
-  border: 2px solid #fff;
+
   width: 50px;
   height: 50px;
-  border-radius: 50%;
   margin: 0 6px;
+  padding: 10px;
+
+  border: 2px solid #fff;
+  border-radius: 50%;
+
+  font-size: 18px;
 }
 #footer-top .logo_footer:hover {
+  cursor: pointer;
+
   color: #2c3e50;
   background-color: #fff;
-  cursor: pointer;
 }
 #footer-top > .container > .row > div:last-child a {
   color: #1abc9c;
